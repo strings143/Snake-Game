@@ -2,20 +2,13 @@
 ![](https://i.imgur.com/9VFhQv6.png)
 
 採用Pygame結合OpenCV，透過偵測某項物體的方式，來達到跟隨物體玩貪吃蛇的遊戲。
-# Test
-* 按下空白鍵開始遊戲。
-* 右邊綠色框是偵測到的物體，左右上下移動來控制蛇。
-* 碰到自己或邊界就死亡，在玩一次按空白鍵，結束按Q鍵。
-
-![](https://i.imgur.com/CqQgeXz.png)
-![](https://i.imgur.com/yOagxMB.png)
 
 # Installation
 ```
  pip install pygame
  pip install opencv-python
 ```
-# Issues
+# Usage
 **偵測物體參數，如需更換物體，請改Code這部分的參數。**
 ```
  lower=np.array([22,127,98])
@@ -73,6 +66,15 @@ while True:
 cap.release()
 cv2.destroyAllWindows()
 ```
+# Demo
+* 按下空白鍵開始遊戲。
+* 右邊綠色框是偵測到的物體，左右上下移動來控制蛇。
+* 碰到自己或邊界就死亡，在玩一次按空白鍵，結束按Q鍵。
+
+![](https://i.imgur.com/CqQgeXz.png)
+![](https://i.imgur.com/yOagxMB.png)
+
+
 # Flow Chart
 ![](https://i.imgur.com/ofSHCkh.png)
 
